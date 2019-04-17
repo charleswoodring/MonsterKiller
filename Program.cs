@@ -45,10 +45,30 @@ namespace MonsterKiller
     Hunter VonRimmersmark = new Hunter("Erich", "Von Rimmersmark");
 
     Demon demon = new Demon(); // D is the type d is the object
-
     VonRimmersmark.Ignite(demon);
     VonRimmersmark.SplashWater(demon);
     VonRimmersmark.WieldSilver(demon);
+
+    Ghast ghast = new Ghast(); // G is the type g is the object
+    VonRimmersmark.Ignite(ghast);
+    VonRimmersmark.SplashWater(ghast);
+
+    Ghoul ghoul = new Ghoul(); // G is the type g is the object
+    VonRimmersmark.SplashWater(ghoul);
+    VonRimmersmark.WieldSilver(ghoul);
+
+    Mummy mummy = new Mummy(); // M is the type m is the object
+    VonRimmersmark.Ignite(mummy);
+
+    Vampire vampire = new Vampire(); // V is the type v is the object
+    VonRimmersmark.Ignite(vampire);
+    VonRimmersmark.WieldSilver(vampire);
+
+    Wight wight = new Wight(); // W is the type w is the object
+    VonRimmersmark.WieldSilver(wight);
+
+    Zombie zombie = new Zombie(); // Z is the type z is the object
+    VonRimmersmark.Ignite(zombie);
 
 }
 }
